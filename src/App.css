@@ -36,3 +36,14 @@
     transform: rotate(360deg);
   }
 }
+
+/* Spinner Styles */
+
+ul.circle {
+  list-style: none;
+  margin: 2rem auto;
+  border-radius: 50%;
+  width: 31.25rem;
+  height: 31.25rem;
+  border: 2px solid #FFFFFF;
+}
