@@ -102,9 +102,6 @@ function App() {
           <div className="spinner-btn">
             <p>Spin Wheel!</p>
           </div>
-          <div className="arrow">
-            <span className="pointer"></span>
-          </div>
           <div>
             <div className="arrow-pointer"></div>
             <ul className="circle">
