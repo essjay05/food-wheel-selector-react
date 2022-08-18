@@ -57,7 +57,7 @@ function App() {
       bgColor: 'rgba(6, 82, 221, 1)'
     },
     {
-      name: 'Noods',
+      name: 'Mexican',
       bgColor: 'rgba(0, 148, 50, 1)'
     },
     {
