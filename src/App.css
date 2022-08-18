@@ -109,7 +109,7 @@ ul.circle {
   border-right: 15px solid transparent;
   border-top: 80px solid var(--black);
   left: 50%;
-  position: relative;
+  position: absolute;
   z-index: 100;
 }
 
@@ -130,6 +130,15 @@ ul.circle {
 }
 
 /* Responsive styles */
+@media screen and (max-width:1280px) {
+  ul.circle {
+    width: 25rem;
+    height: 25rem;
+  }
+  .spinner-slice .text {
+    font-size: .7rem;
+  }
+}
 
 
 
