@@ -1,10 +1,19 @@
-import React, { useState, useEffect } from 'react';
-import color from 'randomcolor';
+import React, { useState } from 'react';
 import './App.css';
 
 function App() {
 
-  const [selectedFood, setSelectedFood] = useState('')
+  // const [selectedFood, setSelectedFood] = useState('')
+  const [spinStart, setSpinStart] = useState({name: 'circle'})
+
+  const startRotation = () => {
+    setSpinStart({name: 'circle start-rotate'})
+    setTimeout(() => {
+      setSpinStart({name: 'circle start-rotate stop-rotate'})
+    }, spinTime)
+  }
+
+  const spinTime = Math.floor((Math.random() * 10000) + 1)
 
   const foodObjectList = [
     {
@@ -57,40 +66,40 @@ function App() {
     },
   ]
 
-  const foodList = [
-    'Sushi',
-    'Pizza',
-    'Burger & Fries',
-    'Wings',
-    'Dumplings/Dim Sum',
-    'Hot Pot',
-    'Korean BBQ',
-    'Vietnamese',
-    'Poke',
-    'Hawaiian',
-    'Noods'
-  ]
+  // const foodList = [
+  //   'Sushi',
+  //   'Pizza',
+  //   'Burger & Fries',
+  //   'Wings',
+  //   'Dumplings/Dim Sum',
+  //   'Hot Pot',
+  //   'Korean BBQ',
+  //   'Vietnamese',
+  //   'Poke',
+  //   'Hawaiian',
+  //   'Noods'
+  // ]
 
-  const pieColors = [
-    '#FFC312',
-    '#F79F1F',
-    '#EE5A24',
-    '#B53471',
-    '#833471',
-    '#9980FA',
-    '#D980FA',
-    '#12CBC4',
-    '#1289A7',
-    '#0652DD',
-    '#006266',
-    '#009432',
-    '#A3CB38',
-    '#C4E538'
-  ]
+  // const pieColors = [
+  //   '#FFC312',
+  //   '#F79F1F',
+  //   '#EE5A24',
+  //   '#B53471',
+  //   '#833471',
+  //   '#9980FA',
+  //   '#D980FA',
+  //   '#12CBC4',
+  //   '#1289A7',
+  //   '#0652DD',
+  //   '#006266',
+  //   '#009432',
+  //   '#A3CB38',
+  //   '#C4E538'
+  // ]
 
-  useEffect(() => {
-    console.log(foodObjectList)
-  }, []) 
+  // useEffect(() => {
+  //   console.log(foodObjectList)
+  // }, []) 
   
   return (
     <div className="App">
@@ -99,12 +108,14 @@ function App() {
           What's to eat?
         </h1>
         <section className="spinner-section">
-          <div className="spinner-btn">
+          <div
+            className="spinner-btn"
+            onClick={startRotation}>
             <p>Spin Wheel!</p>
           </div>
-          <div>
+          <div className="spinner-wheel">
             <div className="arrow-pointer"></div>
-            <ul className="circle">
+            <ul className={spinStart.name}>
               {foodObjectList.map((food, index) => (<li 
                 key={index}
                 className="spinner-slice"

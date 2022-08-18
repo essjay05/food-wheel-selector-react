@@ -1,12 +1,5 @@
 /* constants */
 :root {
-  /* Spinner constants */
-  --diameter: 21.875rem;
-  --numberOfSlices : 12;
-  --radius: calc(var(--diameter)/2);
-  --circumference: calc(6.283185307 * var(--radius));
-  --sliceHeight: calc((var(--circumference) / var(--numberOfSlices)));
-  --rotation: calc(360deg / var(--numberOfSlices));
 
   /* Color constants */
   --white: #FFFFFF;
@@ -32,43 +25,22 @@
 
 }
 
-
-.App {
-  text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
 .App-header {
-  background-color: #282c34;
   min-height: 100vh;
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
+  justify-content: flex-start;
   font-size: calc(10px + 2vmin);
   color: var(--white);
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+  padding: 2rem 0;
 }
 
 /* Spinner Styles */
+.spinner-section {
+  width: 100%;
+}
+
 .spinner-btn {
   padding: .75rem 2rem;
   margin: 1rem auto;
@@ -77,16 +49,12 @@
   border: .25rem solid #FFC312;
   color: var(--white);
   font-weight: 600;
+  text-align: center;
+  width: 10rem;
 }
 
-.arrow {
-  position: absolute;
-  height: 1.875rem;
-  width: 3.125rem;
-}
-
-.pointer {
-
+.spinner-btn:hover {
+  cursor: pointer;
 }
 
 ul.circle {
@@ -123,8 +91,15 @@ ul.circle {
   color: var(--white);
   font-weight: 800;
   font-size: 1rem;
-  -webkit-text-stroke-width: .5px;
-  -webkit-text-stroke-color: var(--black);
+  text-shadow: 2px 2px 2px var(--black);
+}
+
+.spinner-wheel {
+  position: absolute;
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  width: 100%;
 }
 
 .arrow-pointer {
@@ -132,11 +107,29 @@ ul.circle {
   height: 0;
   border-left: 15px solid transparent;
   border-right: 15px solid transparent;
-  border-top: 50px solid var(--black);
+  border-top: 80px solid var(--black);
   left: 50%;
-  top: -20%;
-  position: absolute;
-  z-index: 1;
+  position: relative;
+  z-index: 100;
 }
+
+/* Spin animation */
+.start-rotate {
+  animation: start-rotate 1s linear infinite;
+}
+
+@keyframes start-rotate {
+  100% {
+    transform: rotate(360deg);
+  }
+  
+}
+
+.stop-rotate {
+  animation-play-state: paused;
+}
+
+/* Responsive styles */
+
 
 
