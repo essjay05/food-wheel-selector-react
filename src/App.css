@@ -140,5 +140,16 @@ ul.circle {
   }
 }
 
+/* Responsive styles */
+@media screen and (max-width:400px) {
+  ul.circle {
+    width: 20rem;
+    height: 20rem;
+  }
+  .spinner-slice .text {
+    font-size: .6rem;
+  }
+}
+
 
 
