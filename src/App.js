@@ -25,7 +25,7 @@ function App() {
       bgColor: 'rgba(247, 159, 31, 1)'
     },
     {
-      name: 'Burger & Fries',
+      name: 'Burgers',
       bgColor: 'rgba(238, 90, 36, 1)'
     },
     {
@@ -66,6 +66,7 @@ function App() {
     },
   ]
 
+// Next feature: Make Food list editable by others
   // const foodList = [
   //   'Sushi',
   //   'Pizza',

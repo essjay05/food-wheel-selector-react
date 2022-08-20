@@ -5,7 +5,7 @@
   align-items: center;
   justify-content: flex-start;
   font-size: calc(10px + 2vmin);
-  color: var(--white);
+  color: var(--black);
   padding: 2rem 0;
 }
 
@@ -62,11 +62,10 @@ ul.circle {
   display: block;
   transform: skewY(60deg) rotate(15deg);
   padding-top: 20px;
-  color: var(--white);
+  color: var(--black);
   font-family: 'Oswald', sans-serif;
   font-weight: 800;
-  font-size: 1.05rem;
-  text-shadow: 2px 2px 2px var(--black);
+  font-size: 1.25rem;
 }
 
 .spinner-wheel {
