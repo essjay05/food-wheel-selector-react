@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import './App.css';
-import FoodForm from './components/foodForm/FoodForm';
+// import FoodForm from './components/foodForm/FoodForm';
 import Spinner from './components/spinner/Spinner';
 
 function App() {
@@ -14,7 +14,7 @@ function App() {
       </header>
       <div className="App-body">
         <Spinner />
-        <FoodForm />
+        {/* <FoodForm /> */}
       </div>
     </div>
   );

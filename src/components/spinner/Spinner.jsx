@@ -80,22 +80,22 @@ const Spinner = () => {
   //   'Noods'
   // ]
 
-  // const pieColors = [
-  //   '#FFC312',
-  //   '#F79F1F',
-  //   '#EE5A24',
-  //   '#B53471',
-  //   '#833471',
-  //   '#9980FA',
-  //   '#D980FA',
-  //   '#12CBC4',
-  //   '#1289A7',
-  //   '#0652DD',
-  //   '#006266',
-  //   '#009432',
-  //   '#A3CB38',
-  //   '#C4E538'
-  // ]
+  const pieColors = [
+    '#FFC312',
+    '#F79F1F',
+    '#EE5A24',
+    '#B53471',
+    '#833471',
+    '#9980FA',
+    '#D980FA',
+    '#12CBC4',
+    '#1289A7',
+    '#0652DD',
+    '#006266',
+    '#009432',
+    '#A3CB38',
+    '#C4E538'
+  ]
 
   // useEffect(() => {
   //   console.log(foodObjectList)
@@ -115,7 +115,7 @@ const Spinner = () => {
             key={index}
             className="spinner-slice"
             style={{
-              backgroundColor: `${food.bgColor}`, 
+              backgroundColor: `${pieColors[index]}`, 
               transform: `rotate(${index * 30}deg) skewY(-60deg)`}}>
             <div 
               className="text"
