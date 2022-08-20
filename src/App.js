@@ -4,8 +4,6 @@ import FoodForm from './components/foodForm/FoodForm';
 import Spinner from './components/spinner/Spinner';
 
 function App() {
-
-  
   
   return (
     <div className="App">
@@ -14,8 +12,10 @@ function App() {
           What's to eat?
         </h1>
       </header>
-      <Spinner />
-      <FoodForm />
+      <div className="App-body">
+        <Spinner />
+        <FoodForm />
+      </div>
     </div>
   );
 }
