@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React from 'react';
 import './App.css';
 // import FoodForm from './components/foodForm/FoodForm';
 import Spinner from './components/spinner/Spinner';

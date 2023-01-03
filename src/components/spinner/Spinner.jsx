@@ -12,7 +12,7 @@ const Spinner = () => {
     }, spinTime)
   }
 
-  const spinTime = Math.floor((Math.random() * 10000) + 1)
+  const spinTime = Math.floor((Math.random() * 3500) + 1)
 
   // const foodObjectList = [
   //   {
