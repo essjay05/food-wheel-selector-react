@@ -4,8 +4,12 @@
   text-align: center;
 }
 
-.App-header > * {
+.App-header h1{
   padding-bottom: .75rem;
+}
+
+.App-header p {
+  font-size: 1.25rem;
 }
 
 .App-body {
