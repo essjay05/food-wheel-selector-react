@@ -21,7 +21,7 @@ const FoodWheel = () => {
     'Hot Pot',
     'Korean BBQ',
     'Vietnamese',
-    'Mediterranean',
+    'Poke',
     'Hawaiian',
     'Mexican',
     'Thai'
