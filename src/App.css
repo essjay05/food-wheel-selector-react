@@ -18,7 +18,7 @@
 /* Responsive styles */
 @media screen and (max-width:450px) {
   .App-header {
-    padding-bottom: 0;
+    padding-bottom: 1rem;
   }
 
   .App-body {
