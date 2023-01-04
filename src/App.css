@@ -26,12 +26,12 @@
 /* Responsive styles */
 @media screen and (max-width:450px) {
   .App-header {
-    padding: 0 1.5rem 1rem;
+    padding: 1rem 1.5rem;
     max-width: 90%;
   }
 
   h1 {
-    font-size: 1.25rem;
+    font-size: 1.5rem;
   }
 
   p {
