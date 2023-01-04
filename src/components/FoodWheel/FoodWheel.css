@@ -97,13 +97,14 @@
 }
 
 /* Responsive styles */
-@media screen and (max-width:600px) {
+@media screen and (max-width:450px) {
   .container {
-    width: 23.5rem;
-    height: 23.5rem;
+    width: 20.5rem;
+    height: 20.5rem;
   }
 
   .container .wheel .wheel-slice .text {
+    font-size: .95rem;
     padding-top: 10px;
     padding-left: 25px;
     font-weight: 800;
