@@ -74,39 +74,41 @@
 .container .wheel .wheel-slice .text {
   position: relative;
   transform: rotate(40deg);
-  font-size: 1.15em;
+  padding-top: .5rem;
+  padding-left: 1.1rem;
+  font-size: 1.25rem;
   font-weight: 600;
   color: #fff;
+  text-transform: uppercase;
   text-shadow: 3px 3px 2px rgba(0, 0, 0, 0.25);
 
 }
 
 /* Responsive styles */
 @media screen and (max-width:1280px) {
-  ul.circle, .container {
+  .container {
     width: 25rem;
     height: 25rem;
   }
-  .spinner-slice .text {
-    font-size: .8rem;
+  .container .wheel .wheel-slice .text {
+    font-size: 1.1rem;
+    padding-left: 20px;
   }
 }
 
 /* Responsive styles */
-@media screen and (max-width:450px) {
-  ul.circle, .container {
-    width: 20rem;
-    height: 20rem;
+@media screen and (max-width:600px) {
+  .container {
+    width: 23.5rem;
+    height: 23.5rem;
   }
 
-  .spinner-slice .text {
-    padding-top: 5px;
-    font-size: .65rem;
+  .container .wheel .wheel-slice .text {
+    padding-top: 10px;
+    padding-left: 25px;
+    font-weight: 800;
+    text-transform: uppercase;
   }
 
-  .arrow-pointer {
-    border-left: 10px solid transparent;
-    border-right: 10px solid transparent;
-    border-top: 55px solid var(--white);
-  }
+
 }

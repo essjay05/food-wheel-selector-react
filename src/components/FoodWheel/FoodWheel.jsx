@@ -14,16 +14,16 @@ const FoodWheel = () => {
   // Next feature: Make Food list editable by others
   const foodList = [
     'Sushi',
-    'Pizza',
-    'Burgers',
-    'Wings',
-    'Dim Sum',
-    'Hot Pot',
-    'Korean BBQ',
-    'Vietnamese',
-    'Poke',
-    'Hawaiian',
     'Mexican',
+    'Poke',
+    'Burgers',
+    'Dim Sum',
+    'Korean BBQ',
+    'Wings',
+    'Vietnamese',
+    'Pizza',
+    'Hot Pot',
+    'Hawaiian',
     'Thai'
   ]
 
