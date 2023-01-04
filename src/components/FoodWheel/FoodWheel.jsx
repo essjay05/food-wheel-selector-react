@@ -16,13 +16,13 @@ const FoodWheel = () => {
     'Sushi',
     'Pizza',
     'Burgers',
-    // 'Wings',
+    'Wings',
     'Dim Sum',
     'Hot Pot',
     'Korean BBQ',
     'Vietnamese',
-    // 'Poke',
-    // 'Hawaiian',
+    'Mediterranean',
+    'Hawaiian',
     'Mexican',
     'Thai'
   ]
@@ -35,12 +35,12 @@ const FoodWheel = () => {
 
   const pieColors = [
     '#FFC312',
-    // '#F79F1F',
+    '#F79F1F',
     '#EE5A24',
     '#B53471',
-    // '#833471',
+    '#833471',
     '#9980FA',
-    // '#D980FA',
+    '#D980FA',
     '#12CBC4',
     '#1289A7',
     '#0652DD',
@@ -62,6 +62,7 @@ const FoodWheel = () => {
             key={index}
             className="wheel-slice"
             style={{
+              '--pieSliceDeg': `${360 / foodList.length}deg`,
               '--i': `${index + 1}`,
               backgroundColor: `${pieColors[index]}`}}>
             <div 

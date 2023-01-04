@@ -62,8 +62,8 @@
   width: 50%;
   height: 50%;
   transform-origin: bottom right;
-  transform: rotate(calc(40deg * var(--i)));
-  clip-path: polygon(0 0, 53.5% 0, 100% 100%, 0 53.5%);
+  transform: rotate(calc(var(--pieSliceDeg) * var(--i)));
+  clip-path: polygon(0 0, 45.5% 0, 100% 100%, 0 45.5%); /*figure out calculations for dynamic number of pie slices for percentages*/
   display: flex;
   justify-content: center;
   align-items: center;
