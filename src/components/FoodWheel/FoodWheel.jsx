@@ -54,7 +54,9 @@ const FoodWheel = () => {
     <section className='food-wheel-section'>
       <div className='container'>
         <button
-          className='spin-btn' onClick={spinWheel}>Spin</button>
+          className='spin-btn'
+          onClick={spinWheel}
+          aria-label='Spin the wheel'>Spin</button>
         <div className='wheel'>
         {foodList.map((item, index) => (<div 
             key={index}
