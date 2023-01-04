@@ -4,6 +4,10 @@
   text-align: center;
 }
 
+.App-header > * {
+  padding-bottom: .75rem;
+}
+
 .App-body {
   display: flex;
   align-items: flex-start;

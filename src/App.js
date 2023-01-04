@@ -8,10 +8,10 @@ function App() {
   return (
     <div className="App">
       <header className="App-header">
-        <h1>
+        <h1 className="App-title">
           What should we eat?
         </h1>
-        <p>JK's Food Decision Wheel: spin to decide</p>
+        <p className="App-description">JK's Food Decision Wheel: spin to decide</p>
       </header>
       <div className="App-body">
         <FoodWheel />
