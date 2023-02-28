@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/food-wheel-selector-react/static/css/main.28e18497.css",
+    "main.js": "/food-wheel-selector-react/static/js/main.b7c882ab.js",
+    "index.html": "/food-wheel-selector-react/index.html",
+    "main.28e18497.css.map": "/food-wheel-selector-react/static/css/main.28e18497.css.map",
+    "main.b7c882ab.js.map": "/food-wheel-selector-react/static/js/main.b7c882ab.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.28e18497.css",
+    "static/js/main.b7c882ab.js"
+  ]
+}
